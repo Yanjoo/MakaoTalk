@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bp" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.RoomsController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="400.0" spacing="30.0" styleClass="menu" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="showFriends" text="친구 목록" />
+            <Button text="대화 창" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+         
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text=" 채팅">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+            <ListView fx:id="chatRoomList" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="465.0" prefWidth="392.0" styleClass="friendsList">
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </ListView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

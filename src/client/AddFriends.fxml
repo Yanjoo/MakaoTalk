@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="231.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.AddFriendsController">
+   <children>
+      <Label layoutX="14.0" layoutY="29.0" prefHeight="19.0" prefWidth="38.0" text="ID" />
+      <TextField fx:id="id" layoutX="33.0" layoutY="24.0" />
+      <Button fx:id="btnAdd" layoutX="47.0" layoutY="61.0" text="추가" />
+      <Button id="btnClose" layoutX="133.0" layoutY="61.0" text="취소" />
+   </children>
+</AnchorPane>

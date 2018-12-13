@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="alarm" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color:white; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView id="image" fitHeight="66.0" fitWidth="75.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/profile.gif" />
+         </image>
+      </ImageView>
+      <Label id="fromName" layoutX="108.0" layoutY="26.0" style="-fx-text-fill:black;" text="이름" />
+      <Label id="contents" layoutX="108.0" layoutY="65.0" style="-fx-text-fill:black;" text="내용" />
+   </children>
+</AnchorPane>

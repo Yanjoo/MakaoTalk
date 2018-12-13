@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="400.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ChatController">
+   <top>
+      <HBox fx:id="title" prefHeight="70.0" prefWidth="400.0" spacing="20.0" styleClass="hBox" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="friendProfile" fitHeight="71.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/basic.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="friendName" >
+               <HBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="message" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="71.0" prefWidth="356.0" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#btnSend" prefHeight="100.0" prefWidth="84.0" text="전송" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <ListView fx:id="chatList" prefHeight="477.0" prefWidth="383.0" styleClass="chat" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></ListView>
+   </center>
+</BorderPane>

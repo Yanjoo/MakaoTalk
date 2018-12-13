@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="client.JoinSuccessController">
+   <children>
+      <ImageView fitHeight="55.0" fitWidth="51.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/dialog-info.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="76.0" layoutY="23.0" text="회원가입 성공" />
+      <Button layoutX="90.0" layoutY="55.0" onAction="#btnConfirm" text="확인" />
+   </children>
+</AnchorPane>

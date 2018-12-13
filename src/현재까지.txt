@@ -1,0 +1,12 @@
+1. 회원가입 : 
+- loginData.dat에 회원정보(id/pw) 저장 -> 닉네임 추가 예정, ip 주소 추가 예정
+- id_Friends.dat로 id에 친구 목록을 관리(최대 100개) -> vector나 arrayList를 사용하여 수정
+
+2. 로그인: 
+- loginData.dat에 있는 회원정보와 일치하면 success, 아니면 fail
+- id_Friends.dat에 있는 친구 목록을 화면에 추가 -> 가나다순 정렬
+
+3. 친구 추가
+- loginData.dat에 있는 회원정보와 일치하면 추가, 없으면 추가 실패
+- id_Friends.dat에 친구 id 추가 -> ip 추가 예정
+

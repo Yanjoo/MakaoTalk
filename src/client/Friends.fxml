@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bp" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.FriendsController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="400.0" spacing="30.0" styleClass="menu" BorderPane.alignment="CENTER">
+         <children>
+            <Button text="친구 목록" />
+            <Button fx:id="showTalk" text="대화 창" />
+            <Button fx:id="addFriends" text="친구 추가">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+         
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text=" 내 프로필">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <ListView fx:id="myProfile" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="400.0" />
+            <Separator prefHeight="0.0" prefWidth="377.0" />
+            <Label text=" 친구">
+               <font>
+                  <Font size="13.0" />
+               </font></Label>
+            <ListView fx:id="friendsList" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="465.0" prefWidth="392.0" styleClass="friendsList">
+               <padding>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </padding>
+            </ListView>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="36.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="receiveInfo" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="수신 대기">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <right>
+      <AnchorPane fx:id="ap" prefHeight="0.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
